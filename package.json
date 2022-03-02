@@ -24,9 +24,10 @@
   "homepage": "https://github.com/discord-player/voice-recorder-example#readme",
   "dependencies": {
     "@discordjs/opus": "^0.7.0",
-    "dartjs": "^1.1.0",
+    "dartjs": "^1.1.1",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "libsodium-wrappers": "^0.7.9"
-  }
+  },
+  "devDependencies": {}
 }

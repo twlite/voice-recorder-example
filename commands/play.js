@@ -17,7 +17,7 @@ exports.execute = async (client, message) => {
     });
 
     dispatcher.on("finish", () => {
-        connection.disconnect();
+        connection.destroy();
         return message.channel.send("finished playing audio");
     })
 }

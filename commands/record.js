@@ -14,7 +14,7 @@ exports.execute = async (client, message) => {
 
     const writer = receiver.pipe(fs.createWriteStream(`${__dirname}/../records/recorded-${message.author.id}.pcm`));
     writer.once("finish", () => {
-        connection.disconnect();
+        connection.destroy();
         message.channel.send("Finished writing audio");
     });
 };
